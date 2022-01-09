@@ -1,0 +1,104 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    color: crimson
+}
+
+table thead tr {
+    background-color: cornflowerblue;
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: rgb(100, 237, 219);
+}
+
+
+section {}
+
+table {
+
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px 10px;
+    border: 1px solid;
+}
+
+i {
+    display: inline-block;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(8, 89, 62);
+    transition: .3s;
+    color: rgb(135, 167, 62);
+}
+
+i:hover {
+    color: brown;
+}
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+
+.transition:hover {
+    width: 300px;
+    height: 300px;
+}
+
+.box {
+    height: 300px;
+    width: 400px;
+    background-color: coral;
+
+    position: relative;
+}
+
+.ball {
+    height: 30px;
+    width: 30px;
+    background-color: crimson;
+    border-radius: 50%;
+    transform: translate(370px, 0px);
+    animation: ball-game 5s ease-in-out .5s infinite forwards;
+    position: absolute;
+}
+
+@keyframes ball-game {
+    0% {
+
+        transform: translate(0, 0);
+    }
+
+    25% {
+
+        transform: translate(285px, 270px);
+    }
+
+    50% {
+
+
+        transform: translate(370px, 0px);
+    }
+
+    75% {
+
+        transform: translate(115px, 270px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+
+
+}
